@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20181221 11:07:34.534" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
+<suite source="D:\Desktop\robot\furnover-test-mobile\register.robot" id="s1" name="Register">
+<test id="s1-t1" name="Open Android app_localhost">
+<kw name="Open Browser" library="ExtendedSelenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL_app}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20181221 11:07:34.742" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8100/tabs/(me:me)'</msg>
+<status status="PASS" endtime="20181221 11:07:41.213" starttime="20181221 11:07:34.742"></status>
+</kw>
+<kw name="Click Button" library="ExtendedSelenium2Library">
+<doc>Clicks a button identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@class="hydrated"]</arg>
+</arguments>
+<msg timestamp="20181221 11:07:41.215" level="INFO">Clicking button '//*[@class="hydrated"]'.</msg>
+<kw name="Capture Page Screenshot" library="ExtendedSelenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20181221 11:07:42.378" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20181221 11:07:42.378" starttime="20181221 11:07:41.349"></status>
+</kw>
+<msg timestamp="20181221 11:07:42.378" level="FAIL">ValueError: Element locator '//*[@class="hydrated"]' did not match any elements.</msg>
+<status status="FAIL" endtime="20181221 11:07:42.378" starttime="20181221 11:07:41.214"></status>
+</kw>
+<status status="FAIL" endtime="20181221 11:07:42.378" critical="yes" starttime="20181221 11:07:34.742">ValueError: Element locator '//*[@class="hydrated"]' did not match any elements.</status>
+</test>
+<kw type="teardown" name="Close Browser#">
+<msg timestamp="20181221 11:07:42.393" level="FAIL">No keyword with name 'Close Browser#' found. Did you mean:
+    ExtendedSelenium2Library.Close Browser</msg>
+<status status="FAIL" endtime="20181221 11:07:42.393" starttime="20181221 11:07:42.393">No keyword with name 'Close Browser#' found. Did you mean:
+    ExtendedSelenium2Library.Close Browser</status>
+</kw>
+<status status="FAIL" endtime="20181221 11:07:42.393" starttime="20181221 11:07:34.534">Suite teardown failed:
+No keyword with name 'Close Browser#' found. Did you mean:
+    ExtendedSelenium2Library.Close Browser</status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Register" pass="0">Register</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
